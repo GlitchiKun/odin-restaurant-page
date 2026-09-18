@@ -1,0 +1,67 @@
+body {
+  font-family: "IBM Plex Serif", serif;
+  margin: 0;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    url(https://images.pexels.com/photos/33033780/pexels-photo-33033780.jpeg)
+      center / cover;
+}
+
+nav {
+  background: linear-gradient(
+    0,
+    rgb(42, 42, 42) 0%,
+    rgba(42, 42, 42, 0.521) 100%
+  );
+  padding-top: 64px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 6px;
+}
+
+.button-container button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: larger;
+  font-family: inherit;
+  flex: 1;
+  padding-bottom: 12px;
+}
+
+.button-container button:hover {
+  cursor: pointer;
+  background: linear-gradient(0, black 0%, transparent 100%);
+}
+
+#content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  margin: 10px 15%;
+  gap: 128px 32px;
+}
+
+#content img {
+  width: 360px;
+  box-shadow: 0 0 10px black;
+  border-radius: 2px;
+}
+
+.head,
+.foot {
+  grid-column: span 2;
+  text-align: center;
+}
+
+.head {
+  border-bottom: 1px solid lightgray;
+}
+
+.foot {
+  border-top: 1px solid lightgray;
+}
