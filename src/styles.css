@@ -17,9 +17,21 @@ nav {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: Tangerine;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
   font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
 }
 
 img {
@@ -71,5 +83,25 @@ img {
   .foot {
     border-top: 1px solid lightgray;
     margin-top: 36px;
+  }
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  h2 + p {
+    font-style: italic;
+  }
+
+  h3 {
+    margin-top: 16px;
+    margin-bottom: 6px;
+  }
+
+  > *:not(:last-child) {
+    border-bottom: 1px solid lightgray;
   }
 }
