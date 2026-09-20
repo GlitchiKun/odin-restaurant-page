@@ -22,6 +22,12 @@ h2 {
   font-size: 3rem;
 }
 
+img {
+  width: 360px;
+  box-shadow: 0 0 10px black;
+  border-radius: 2px;
+}
+
 .button-container {
   display: flex;
   justify-content: space-around;
@@ -43,33 +49,27 @@ h2 {
   background: linear-gradient(0, black 0%, transparent 100%);
 }
 
-#content {
+#home {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
   margin: 10px 15%;
   gap: 60px 32px;
-}
 
-#content img {
-  width: 360px;
-  box-shadow: 0 0 10px black;
-  border-radius: 2px;
-}
+  .head,
+  .foot {
+    grid-column: span 2;
+    text-align: center;
+  }
 
-.head,
-.foot {
-  grid-column: span 2;
-  text-align: center;
-}
+  .head {
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 36px;
+  }
 
-.head {
-  border-bottom: 1px solid lightgray;
-  margin-bottom: 36px;
-}
-
-.foot {
-  border-top: 1px solid lightgray;
-  margin-top: 36px;
+  .foot {
+    border-top: 1px solid lightgray;
+    margin-top: 36px;
+  }
 }

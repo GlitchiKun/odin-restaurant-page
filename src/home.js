@@ -1,25 +1,26 @@
 export class HomePage {
-  constructor(parent) {
-    self.parent = parent;
-  }
+  static generateDiv() {
+    const div = document.createElement("div");
+    div.id = "home";
 
-  load() {
-    self.parent.appendChild(HomePage.#generateHead());
-    self.parent.appendChild(HomePage.#generateFirstText());
-    self.parent.appendChild(
+    div.appendChild(HomePage.#generateHead());
+    div.appendChild(HomePage.#generateFirstText());
+    div.appendChild(
       HomePage.#generateImg(
         "https://images.pexels.com/photos/30469701/pexels-photo-30469701.jpeg",
         "5 plates with luxury dishes.",
       ),
     );
-    self.parent.appendChild(
+    div.appendChild(
       HomePage.#generateImg(
         "https://images.pexels.com/photos/262047/pexels-photo-262047.jpeg",
         "A picture of a restaurant.",
       ),
     );
-    self.parent.appendChild(HomePage.#generateSecondText());
-    self.parent.appendChild(HomePage.#generateFoot());
+    div.appendChild(HomePage.#generateSecondText());
+    div.appendChild(HomePage.#generateFoot());
+
+    return div;
   }
 
   static #generateHead() {
