@@ -1,6 +1,7 @@
 import "./styles.css";
 import { HomePage } from "./home.js";
 import { MenuPage } from "./menu.js";
+import { AboutPage } from "./about.js";
 
 const content = document.getElementById("content");
 
@@ -20,6 +21,12 @@ const menu_button = document.getElementById("menu-button");
 menu_button.addEventListener("click", (e) => {
   clearContent();
   content.appendChild(MenuPage.generateDiv());
+});
+
+const about_button = document.getElementById("about-button");
+about_button.addEventListener("click", (e) => {
+  clearContent();
+  content.appendChild(AboutPage.generateDiv());
 });
 
 document.addEventListener("DOMContentLoaded", (e) => {

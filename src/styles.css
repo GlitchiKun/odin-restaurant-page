@@ -105,3 +105,17 @@ img {
     border-bottom: 1px solid lightgray;
   }
 }
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    border-bottom: 1px solid lightgray;
+  }
+
+  span {
+    font-weight: bold;
+  }
+}
